@@ -348,4 +348,3 @@ CREATE TABLE IF NOT EXISTS inpatient_claims (
     hcpcs_cd_44 CHAR(5),
     hcpcs_cd_45 CHAR(5)
 );
-
