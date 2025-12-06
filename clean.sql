@@ -43,5 +43,11 @@ SELECT
 --clean fields in beneficiaries
 
 
-SELECT * FROM inpatient_claims
-WHERE segment=2;
+SELECT clm_id,count(*)
+FROM inpatient_claims
+GROUP BY clm_id
+HAVING count(*)>1
+;
+
+SELECT * FROM inpatient_claims 
+WHERE clm_id = '196861177018065';
